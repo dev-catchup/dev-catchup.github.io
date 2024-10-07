@@ -1,1 +1,74 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catchup.life - Revolutionary AI Connects Friends!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        .bg-custom {
+            background-image: url('https://example.com/your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="bg-custom text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4">Revolutionary AI Connects Friends!</h1>
+            <p class="text-xl sm:text-2xl text-center mb-8">Don't miss out on this unique chance to join the Catchup.life community!</p>
+            
+            <div id="signupForm" class="max-w-md mx-auto">
+                <form class="space-y-4">
+                    <input type="email" placeholder="Enter your email" required class="w-full p-3 rounded-md text-black">
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">Sign up Now!</button>
+                </form>
+            </div>
+            
+            <div id="thankYou" class="max-w-md mx-auto hidden">
+                <p class="text-2xl font-bold text-center">Thanks!</p>
+                <p class="text-center">We value your interest in Catchup.life!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">Catchup.life Highlights</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold mb-2">Join</h3>
+                <p>Catchup.life makes your social connections vibrant with interactive AIs in our most engaging app yet.</p>
+            </div>
+            <div class="text-center md:col-span-1 lg:col-span-1">
+                <img src="https://example.com/app-screenshot.jpg" alt="Catchup.life App Screenshot" class="mx-auto max-w-full h-auto rounded-lg shadow-lg">
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-semibold mb-2">Exclusive Connections</h3>
+                <p>We believe technology can be replicated, but no one can replicate the full experience of using Catchup.life.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Begin climbing the Catchup.life waitlist today</h2>
+            <p class="mb-6">Share with friends, earn points, & get early access!</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">Facebook</a>
+                <a href="#" class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-md transition duration-300">Twitter</a>
+                <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">Email</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('signupForm').classList.add('hidden');
+            document.getElementById('thankYou').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
